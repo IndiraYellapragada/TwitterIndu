@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>TweetInduServlet</servlet-name>
+		<servlet-class>clockindu.TweetInduServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Tweetlist</servlet-name>
+		<servlet-class>clockindu.Tweetlist</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateCountTweet</servlet-name>
+		<servlet-class>clockindu.UpdateCountTweet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FriendsTweet</servlet-name>
+		<servlet-class>clockindu.FriendsTweet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>TopTweets</servlet-name>
+		<servlet-class>clockindu.TopTweets</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TweetInduServlet</servlet-name>
+		<url-pattern>/tweets</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Tweetlist</servlet-name>
+		<url-pattern>/tweetlist</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateCountTweet</servlet-name>
+		<url-pattern>/updatecount</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>FriendsTweet</servlet-name>
+		<url-pattern>/friendstweet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TopTweets</servlet-name>
+		<url-pattern>/toptweets</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>welcome.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
